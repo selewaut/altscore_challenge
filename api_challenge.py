@@ -3,12 +3,13 @@ import random
 
 app = Flask(__name__)
 
-systems = ["engine", "navigation", "communication", "life_support"]
+systems = ["engines", "navigation", "communication", "life_support", "deflector_shield"]
 system_codes = {
-    "engine": "ENG123",
-    "navigation": "NAV456",
-    "communication": "COM789",
-    "life_support": "LIF101",
+    "engines": "ENG-04",
+    "navigation": "NAV-01",
+    "communications": "COM-02",
+    "life_support": "LIFE-03",
+    "deflector_shield": "SHLD-05",
 }
 
 
