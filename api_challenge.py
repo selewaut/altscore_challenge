@@ -1,12 +1,5 @@
-from math import log
-import stat
-from flask import Flask, jsonify, render_template_string, request, make_response
+from flask import Flask, jsonify, render_template_string, make_response
 import random
-
-# loggging
-import logging
-
-logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
 
@@ -21,7 +14,6 @@ system_codes = {
 
 @app.route("/status")
 def status():
-    logging.info("Getting Status")
     damaged_system = random.choice(systems)
     return jsonify({"damaged_system": damaged_system})
 
